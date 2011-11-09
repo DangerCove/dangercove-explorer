@@ -48,6 +48,7 @@
   _client_ids = [];
   io.sockets.on('connection', function(socket) {
     var _id;
+    console.log("Incoming connection from " + socket.id);
     _id = socket.id;
     socket.emit('connected', {
       id: _id

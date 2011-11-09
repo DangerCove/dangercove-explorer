@@ -18,7 +18,7 @@ class Socket
 
     # On connected
     @socket.on 'connected', (data) ->
-      alert 'connected'
+      
       _this.id = @.socket.sessionid
 
       # Join game

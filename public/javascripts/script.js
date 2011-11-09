@@ -255,7 +255,6 @@
       _this = this;
       this.socket = io.connect(this.settings.host);
       this.socket.on('connected', function(data) {
-        alert('connected');
         _this.id = this.socket.sessionid;
         return _this.socket.emit('join game', {});
       });
