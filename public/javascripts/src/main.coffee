@@ -29,4 +29,3 @@ $(document).ready ->
       _game.removeEntity data
 
   _socket = new Socket { host: _host, launch: launch, updateClient: updateClient, clientDisconnected: removeClient }
- 
