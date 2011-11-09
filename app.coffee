@@ -29,7 +29,7 @@ app.configure 'development', ->
 
 app.configure 'production', ->
   app.use(express.errorHandler())
-  app.settings.hostname = 'http://shipfight.herokuapp.com'
+  app.settings.hostname = 'http://exploration.herokuapp.com'
   app.settings.port = process.env.PORT || 3000
   app.listen(app.settings.port)
 

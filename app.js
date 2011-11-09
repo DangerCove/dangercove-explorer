@@ -38,7 +38,7 @@
   });
   app.configure('production', function() {
     app.use(express.errorHandler());
-    app.settings.hostname = 'http://shipfight.herokuapp.com';
+    app.settings.hostname = 'http://exploration.herokuapp.com';
     app.settings.port = process.env.PORT || 3000;
     return app.listen(app.settings.port);
   });
