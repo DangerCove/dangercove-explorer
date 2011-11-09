@@ -15,6 +15,7 @@ class Socket
 
     # Connect
     @socket = io.connect @settings.host
+    alert @settings.host
 
     # On connected
     @socket.on 'connected', (data) ->

@@ -44,8 +44,7 @@ _clients = {}
 _client_ids = []
 
 io.sockets.on 'connection', (socket) ->
-  
-  console.log "Incoming connection from #{socket.id}"
+
   _id = socket.id
 
   # Send settings back when connecting
