@@ -31,6 +31,7 @@ app.configure 'production', ->
   app.use(express.errorHandler())
   app.settings.hostname = 'http://shipfight.herokuapp.com'
   app.settings.port = process.env.PORT || 3000
+  console.log "======= PORT: #{app.settings.port}"
   app.listen(app.settings.port)
 
 # Routes

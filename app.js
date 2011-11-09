@@ -40,6 +40,7 @@
     app.use(express.errorHandler());
     app.settings.hostname = 'http://shipfight.herokuapp.com';
     app.settings.port = process.env.PORT || 3000;
+    console.log("======= PORT: " + app.settings.port);
     return app.listen(app.settings.port);
   });
   app.get('/', routes.index);
